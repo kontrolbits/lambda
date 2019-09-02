@@ -29,23 +29,23 @@ module.exports = function (ctx) {
       // iconSet: 'ionicons-v4',
       // lang: 'de', // Quasar language
 
-      // all: true, // --- includes everything; for dev only!
+      all: true, // --- includes everything; for dev only!
 
-      components: [
-        'QLayout',
-        'QHeader',
-        'QDrawer',
-        'QPageContainer',
-        'QPage',
-        'QToolbar',
-        'QToolbarTitle',
-        'QBtn',
-        'QIcon',
-        'QList',
-        'QItem',
-        'QItemSection',
-        'QItemLabel'
-      ],
+      // components: [
+      //   'QLayout',
+      //   'QHeader',
+      //   'QDrawer',
+      //   'QPageContainer',
+      //   'QPage',
+      //   'QToolbar',
+      //   'QToolbarTitle',
+      //   'QBtn',
+      //   'QIcon',
+      //   'QList',
+      //   'QItem',
+      //   'QItemSection',
+      //   'QItemLabel'
+      // ],
 
       directives: [
         'Ripple'
@@ -61,8 +61,8 @@ module.exports = function (ctx) {
 
     build: {
       scopeHoisting: true,
-      // vueRouterMode: 'history',
-      // vueCompiler: true,
+      vueRouterMode: 'history',
+      vueCompiler: true,
       // gzip: true,
       // analyze: true,
       // extractCSS: false,
@@ -82,7 +82,7 @@ module.exports = function (ctx) {
     devServer: {
       // https: true,
       // port: 8080,
-      open: true // opens browser window automatically
+      open: false // opens browser window automatically
     },
 
     // animations: 'all', // --- includes all animations
