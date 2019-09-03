@@ -1,6 +1,6 @@
 <template>
 <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="grad">
         <q-toolbar>
             <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
                 <q-icon name="menu" />
@@ -14,7 +14,7 @@
         </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered content-class="bg-grey-2">
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
         <q-list>
             <q-item-label header>Dashboard</q-item-label>
             <q-item clickable tag="a" href="/">
@@ -98,4 +98,11 @@ export default {
 </script>
 
 <style>
+.grad {
+    background: linear-gradient(to right, rgba(112, 54, 119, 1) 0%, rgba(241, 121, 27, 1) 100%);
+}
+
+.grad-invertido {
+    background: linear-gradient(to left, rgba(77, 99, 125, 1) 0%, rgba(1, 151, 215, 1) 100%);
+}
 </style>
