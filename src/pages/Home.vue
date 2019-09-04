@@ -10,7 +10,7 @@
         <div class="col-3">
             <!-- card1 -->
                 <q-card bordered>
-                    <q-car-section>
+                    <q-card-section>
                         <div class="row items-center no-wrap">
                             <div class="col q-pl-sm">
                                 <div class="text-h6">Our Planet</div>
@@ -34,7 +34,7 @@
                                 </q-btn>
                             </div>
                         </div>
-                    </q-car-section>
+                    </q-card-section>
                     <q-card-section>
                         {{ lorem }}
                     </q-card-section>
@@ -50,7 +50,7 @@
         <div class="col-3 q-gutter-sm">
            <!-- card2 -->
                 <q-card bordered>
-                    <q-car-section>
+                    <q-card-section>
                         <div class="row items-center no-wrap">
                             <div class="col q-pl-sm">
                                 <div class="text-h6">Our Planet</div>
@@ -74,7 +74,7 @@
                                 </q-btn>
                             </div>
                         </div>
-                    </q-car-section>
+                    </q-card-section>
                     <q-card-section>
                         {{ lorem }}
                     </q-card-section>
@@ -90,7 +90,7 @@
         <div class="col-3 q-gutter-sm">
             <!-- card3 -->
                 <q-card bordered>
-                    <q-car-section>
+                    <q-card-section>
                         <div class="row items-center no-wrap">
                             <div class="col q-pl-sm">
                                 <div class="text-h6">Our Planet</div>
@@ -114,7 +114,7 @@
                                 </q-btn>
                             </div>
                         </div>
-                    </q-car-section>
+                    </q-card-section>
                     <q-card-section>
                         {{ lorem }}
                     </q-card-section>
@@ -130,7 +130,7 @@
         <div class="col-3 q-gutter-sm">
             <!-- card4 -->
                 <q-card bordered>
-                    <q-car-section>
+                    <q-card-section>
                         <div class="row items-center no-wrap">
                             <div class="col q-pl-sm">
                                 <div class="text-h6">Our Planet</div>
@@ -154,7 +154,7 @@
                                 </q-btn>
                             </div>
                         </div>
-                    </q-car-section>
+                    </q-card-section>
                     <q-card-section>
                         {{ lorem }}
                     </q-card-section>
