@@ -12,11 +12,11 @@
         </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-10">
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="grad-invertido">
         <q-list>
-            <div class="q-pa-md text-white meu-icone" style="max-width: 350px">
+            <div class="q-pa-md text-white" style="max-width: 350px">
                 <q-list>
-                    <q-expansion-item expand-separator icon="home" label="HOME" default-closeed>
+                    <q-expansion-item class="text-white" expand-separator icon="home" label="HOME" default-closeed>
                         <q-list padding>
                             <q-item clickable v-ripple>
                                 <q-item-section avatar>
