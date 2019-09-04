@@ -14,118 +14,103 @@
 
     <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-10">
         <q-list>
-  <div class="q-pa-md text-white meu-icone" style="max-width: 350px">
-    <q-list>
-      <q-expansion-item
-        expand-separatorz
-        icon="home"
-        label="HOME"
-        default-closeed
-      >
-          <q-list padding>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+            <div class="q-pa-md text-white meu-icone" style="max-width: 350px">
+                <q-list>
+                    <q-expansion-item expand-separator icon="home" label="HOME" default-closeed>
+                        <q-list padding>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-        </q-list>
-      </q-expansion-item>
-      <q-expansion-item
-        expand-separator
-        icon="mail"
-        label="INBOX"
-        default-closeed
-      >
-          <q-list padding>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                        </q-list>
+                    </q-expansion-item>
+                    <q-expansion-item expand-separator icon="mail" label="INBOX" default-closeed>
+                        <q-list padding>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-        </q-list>
-      </q-expansion-item>
-      <q-expansion-item
-        expand-separator
-        icon="settings"
-        label="CONFIGURAÇÕES"
-        default-closeed
-      >
-          <q-list padding>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                        </q-list>
+                    </q-expansion-item>
+                    <q-expansion-item expand-separator icon="settings" label="CONFIGURAÇÕES" default-closeed>
+                        <q-list padding>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="inbox" />
-              </q-item-section>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                            <q-item clickable v-ripple>
+                                <q-item-section avatar>
+                                    <q-icon name="inbox" />
+                                </q-item-section>
 
-              <q-item-section>
-                Inbox
-              </q-item-section>
-            </q-item>
-        </q-list>
-      </q-expansion-item>
-    </q-list>
-  </div>
+                                <q-item-section>
+                                    Inbox
+                                </q-item-section>
+                            </q-item>
+                        </q-list>
+                    </q-expansion-item>
+                </q-list>
+            </div>
         </q-list>
     </q-drawer>
 
@@ -161,6 +146,7 @@ export default {
 .grad-invertido {
     background: linear-gradient(to left, rgba(112, 54, 119, 1) 0%, rgba(241, 121, 27, 1) 100%);
 }
+
 .meu-icone {
     color: rgba(241, 121, 27, 1);
 }
