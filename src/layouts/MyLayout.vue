@@ -6,9 +6,7 @@
                 <q-icon name="menu" />
             </q-btn>
 
-            <q-toolbar-title>
-                <img src="statics/icons/lambda letra 2.svg" style="width: 161px; height: 32px">
-            </q-toolbar-title>
+                <img src="statics/icons/lambda letra 4.svg" style="width: 161px; height: 32px">
 
             <!-- <div>Quasar v{{ $q.version }}</div> -->
         </q-toolbar>
