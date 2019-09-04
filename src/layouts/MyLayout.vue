@@ -232,12 +232,12 @@
     <q-page-container>
         <router-view />
     </q-page-container>
-    <q-footer class="footer grad text-white" style="border-radius: 0px">
+    <q-card class="grad text-white" style="border-radius: 0px">
         <q-toolbar class="flex flex-center">
             <p style="text-align: center">Coporight© <strong> <a> 2019 - Lambda®. </a></strong> Todos os direitos reservados.
                 Desenvolvido por <a href="https://azimutecerto.com.br" style="color:rgba(112, 54, 119, 1) "><strong>Azimute Certo</strong></a></p>
         </q-toolbar>
-    </q-footer>
+    </q-card>
 </q-layout>
 </template>
 
