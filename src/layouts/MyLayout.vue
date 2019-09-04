@@ -7,7 +7,7 @@
             </q-btn>
 
             <q-toolbar-title>
-                &Gamma;&Delta;&Mu;&Beta;D&lambda;
+                <img src="statics/icons/lambda letra 2.svg" style="width: 161px; height: 32px">
             </q-toolbar-title>
 
             <!-- <div>Quasar v{{ $q.version }}</div> -->
@@ -19,7 +19,7 @@
   <div class="q-pa-md text-white meu-icone" style="max-width: 350px">
     <q-list>
       <q-expansion-item
-        expand-separator
+        expand-separatorz
         icon="home"
         label="HOME"
         default-closeed
