@@ -232,6 +232,12 @@
     <q-page-container>
         <router-view />
     </q-page-container>
+    <q-footer class="footer grad text-white" style="border-radius: 0px">
+        <q-toolbar class="flex flex-center">
+            <p style="text-align: center">Coporight© <strong> <a> 2019 - Lambda®. </a></strong> Todos os direitos reservados.
+                Desenvolvido por <a href="https://azimutecerto.com.br" style="color:rgba(112, 54, 119, 1) "><strong>Azimute Certo</strong></a></p>
+        </q-toolbar>
+    </q-footer>
 </q-layout>
 </template>
 
@@ -254,6 +260,9 @@ export default {
 </script>
 
 <style>
+.footer {
+    float: bottom;
+}
 .grad {
     background: linear-gradient(to right, rgba(112, 54, 119, 1) 0%, rgba(241, 121, 27, 1) 100%);
 }
