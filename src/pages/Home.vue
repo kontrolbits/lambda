@@ -173,23 +173,32 @@
         <q-card bordered>
             <q-card-section>
                 <div class="row items-center no-wrap">
-                    <div class="col-9 q-pl-sm">
+                    <div class="col-10 q-pl-sm">
                         <div class="text-h6">Our Planet</div>
                         <!-- <div class="text-subtitle2">by John Doe</div> -->
                     </div>
                     <div class="col-2 q-pl-sm">
-                        <q-btn-toggle
-                            color="primary"
-                            v-model="dataGrafico"
-                            toggle-color="secondary"
-                            :options="[
+                        <q-btn-toggle class="desktop-only" color="primary" v-model="dataGrafico" toggle-color="secondary" :options="[
                                 {label: 'Dia', value: 'dia'},
                                 {label: 'Mês', value: 'mes'},
                                 {label: 'Ano', value: 'ano'}
-                            ]" />
-                    </div>
-                    <div class="col-auto">
-                        <q-btn class="text-h6" dense color="secondary" round icon="cloud_download" />
+                            ]"
+                        />
+                        <q-btn class="mobile-only" color="grey-7" round flat icon="more_vert">
+                            <q-menu cover auto-close>
+                                <q-list>
+                                    <q-item clickable>
+                                        <q-item-section>Remove Card</q-item-section>
+                                    </q-item>
+                                    <q-item clickable>
+                                        <q-item-section>Send Feedback</q-item-section>
+                                    </q-item>
+                                    <q-item clickable>
+                                        <q-item-section>Share</q-item-section>
+                                    </q-item>
+                                </q-list>
+                            </q-menu>
+                        </q-btn>
                     </div>
                 </div>
             </q-card-section>
@@ -200,11 +209,11 @@
             <q-separator />
 
             <q-card-actions class="row flex flex-center bg-grey-4">
-                <div class="col-md-2 col-sm-12 col-xs-12 flex flex-center ">Resultado 1</div>
-                <div class="col-md-2 col-sm-12 col-xs-12 flex flex-center ">Resultado 2</div>
-                <div class="col-md-2 col-sm-12 col-xs-12 flex flex-center ">Resultado 3</div>
-                <div class="col-md-2 col-sm-12 col-xs-12 flex flex-center ">Resultado 4</div>
-                <div class="col-md-2 col-sm-12 col-xs-12 flex flex-center ">Resultado 5</div>
+                <div class="col-md-2 col-sm-6 col-xs-6 flex flex-center ">Resultado 1</div>
+                <div class="col-md-2 col-sm-6 col-xs-6 flex flex-center ">Resultado 2</div>
+                <div class="col-md-2 col-sm-6 col-xs-6 flex flex-center ">Resultado 3</div>
+                <div class="col-md-2 col-sm-6 col-xs-6 flex flex-center ">Resultado 4</div>
+                <div class="col-md-2 col-sm-6 col-xs-6 flex flex-center ">Resultado 5</div>
             </q-card-actions>
         </q-card>
     </div>
