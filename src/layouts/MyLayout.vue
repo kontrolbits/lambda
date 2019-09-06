@@ -12,9 +12,9 @@
 
         </q-toolbar>
     </q-header>
-        <q-drawer v-model="leftDrawerOpen" content-class="grad-invertido">
+        <q-drawer elevated v-model="leftDrawerOpen" content-class="grad-invertido">
         <q-list>
-            <div class="q-pa-md text-white" style="max-width: 350px">
+          <div class="q-pa-md text-white" style="max-width: 350px">
                 <q-list>
                     <q-expansion-item expand-separator icon="home" label="HOME" default-closeed expand-icon-class="text-white">
                         <q-list padding>
@@ -47,6 +47,15 @@
                             </q-item>
                         </q-list>
                     </q-expansion-item>
+                    <q-item clickable v-ripple>
+                        <q-item-section avatar>
+                            <q-icon name="inbox" />
+                        </q-item-section>
+
+                        <q-item-section>
+                            INBOX
+                        </q-item-section>
+                    </q-item>
                     <q-expansion-item expand-separator icon="mail" label="INBOX" default-closeed expand-icon-class="text-white">
                         <q-list padding>
                             <q-item clickable v-ripple>
@@ -78,6 +87,15 @@
                             </q-item>
                         </q-list>
                     </q-expansion-item>
+                    <q-item clickable v-ripple>
+                        <q-item-section avatar>
+                            <q-icon name="inbox" />
+                        </q-item-section>
+
+                        <q-item-section>
+                            INBOX
+                        </q-item-section>
+                    </q-item>
                     <q-expansion-item expand-separator icon="settings" label="CONFIGURAÇÕES" default-closeed expand-icon-class="text-white">
                         <q-list padding>
                             <q-item clickable v-ripple>
@@ -109,6 +127,15 @@
                             </q-item>
                         </q-list>
                     </q-expansion-item>
+                    <q-item clickable v-ripple>
+                        <q-item-section avatar>
+                            <q-icon name="inbox" />
+                        </q-item-section>
+
+                        <q-item-section>
+                            INBOX
+                        </q-item-section>
+                    </q-item>
                 </q-list>
             </div>
         </q-list>
@@ -126,7 +153,7 @@
             <!-- <div>Quasar v{{ $q.version }}</div> -->
         </q-toolbar>
     </q-header>
-        <q-drawer v-model="leftDrawerOpen" content-class="grad-invertido-mobile">
+        <q-drawer elevated v-model="leftDrawerOpen" content-class="grad-invertido-mobile">
         <q-list>
             <div class="q-pa-md text-white" style="max-width: 350px">
                 <q-list>
@@ -161,6 +188,15 @@
                             </q-item>
                         </q-list>
                     </q-expansion-item>
+                    <q-item clickable v-ripple>
+                        <q-item-section avatar>
+                            <q-icon name="inbox" />
+                        </q-item-section>
+
+                        <q-item-section>
+                            INBOX
+                        </q-item-section>
+                    </q-item>
                     <q-expansion-item expand-separator icon="mail" label="INBOX" default-closeed expand-icon-class="text-white">
                         <q-list padding>
                             <q-item clickable v-ripple>
@@ -192,6 +228,15 @@
                             </q-item>
                         </q-list>
                     </q-expansion-item>
+                    <q-item clickable v-ripple>
+                        <q-item-section avatar>
+                            <q-icon name="inbox" />
+                        </q-item-section>
+
+                        <q-item-section>
+                            INBOX
+                        </q-item-section>
+                    </q-item>
                     <q-expansion-item expand-separator icon="settings" label="CONFIGURAÇÕES" default-closeed expand-icon-class="text-white">
                         <q-list padding>
                             <q-item clickable v-ripple>
@@ -223,6 +268,15 @@
                             </q-item>
                         </q-list>
                     </q-expansion-item>
+                    <q-item clickable v-ripple>
+                        <q-item-section avatar>
+                            <q-icon name="inbox" />
+                        </q-item-section>
+
+                        <q-item-section>
+                            INBOX
+                        </q-item-section>
+                    </q-item>
                 </q-list>
             </div>
         </q-list>
@@ -232,12 +286,22 @@
     <q-page-container>
         <router-view />
     </q-page-container>
-    <q-card class="grad text-white" style="border-radius: 0px">
-        <q-toolbar class="flex flex-center">
-            <p style="text-align: center">Coporight© <strong> <a> 2019 - Lambda®. </a></strong> Todos os direitos reservados.
-                Desenvolvido por <a href="https://azimutecerto.com.br" style="color:rgba(112, 54, 119, 1) "><strong>Azimute Certo</strong></a></p>
-        </q-toolbar>
-    </q-card>
+    <div class="desktop-only">
+        <q-footer elevated class="footer grad text-white" style="border-radius: 0px">
+            <q-toolbar class="flex flex-center">
+                <p style="text-align: center">Coporight© <strong> <a> 2019 - Lambda®. </a></strong> Todos os direitos reservados.
+                    Desenvolvido por <a href="https://azimutecerto.com.br" style="color:rgba(112, 54, 119, 1) "><strong>Azimute Certo</strong></a></p>
+            </q-toolbar>
+        </q-footer>
+    </div>
+    <div class="mobile-only">
+        <q-footer elevated class="footer grad-mobile text-white" style="border-radius: 0px">
+            <q-toolbar class="flex flex-center">
+                <p style="text-align: center">Coporight© <strong> <a> 2019 - Lambda®. </a></strong> Todos os direitos reservados.
+                    Desenvolvido por <a href="https://azimutecerto.com.br" style="color:rgba(112, 54, 119, 1) "><strong>Azimute Certo</strong></a></p>
+            </q-toolbar>
+        </q-footer>
+    </div>
 </q-layout>
 </template>
 
@@ -260,9 +324,10 @@ export default {
 </script>
 
 <style>
-.footer {
-    float: bottom;
+ .footer {
+      position:absolute ;
 }
+
 .grad {
     background: linear-gradient(to right, rgba(112, 54, 119, 1) 0%, rgba(241, 121, 27, 1) 100%);
 }
