@@ -295,7 +295,7 @@
         </q-footer>
     </div>
     <div class="mobile-only">
-        <q-footer elevated class="footer grad-mobile text-white" style="border-radius: 0px">
+        <q-footer elevated class="footer grad-mobile text-white">
             <q-toolbar class="flex flex-center">
                 <p style="text-align: center">Coporight© <strong> <a> 2019 - Lambda®. </a></strong> Todos os direitos reservados.
                     Desenvolvido por <a href="https://azimutecerto.com.br" style="color:rgba(112, 54, 119, 1) "><strong>Azimute Certo</strong></a></p>
